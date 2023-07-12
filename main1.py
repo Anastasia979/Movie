@@ -11,11 +11,11 @@ def site(message):
 
 @bot.message_handler(commands=['start'])
 def main(message):
-    bot.send_message(message.chat.id, f'Здравствуйте, {message.from_user.first_name} {message.from_user.last_name}! Выберите жанр фильмов/сериалов, которые больше всего вам нравиться смотреть.')
+    bot.send_message(message.chat.id, f'Здравствуйте, {message.from_user.first_name} {message.from_user.last_name}!\nВыберите жанр фильмов/сериалов, которые больше всего вам нравиться смотреть.')
 
 @bot.message_handler(commands=['main'])
 def main(message):
-    bot.send_message(message.chat.id, f'Боевик\n'f'Вестерн\nГангстерский фильм\nДетектив\nДрама\nИсторический фильм\nКомедия\nМелодрама\nМузыкальный фильм\nНуар\nПолитический фильм\nПриключенческий фильм\nСказка\nТрагедия\nТрагикомедия')
+    bot.send_message(message.chat.id, f'Боевик\nВестерн\nГангстерский фильм\nДетектив\nДрама\nИсторический фильм\nКомедия\nМелодрама\nМузыкальный фильм\nНуар\nПолитический фильм\nПриключенческий фильм\nСказка\nТрагедия\nТрагикомедия')
 
 
 @bot.message_handler()
